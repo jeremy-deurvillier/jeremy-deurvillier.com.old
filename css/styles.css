@@ -1,5 +1,7 @@
+/* ** HOME ** */
+
 #home{
-				height: 100vh;
+				min-height: 100vh;
 				display: flex;
 				flex-flow: column wrap;
 				justify-content: center;
@@ -44,6 +46,27 @@ h3{
 				margin-left: 30px;
 }
 
+/* ** ABOUT ME ** */
+
+#about-me{
+				background: linear-gradient(45deg, #0061ff, #60efff);
+				padding: 10px 20px 50px 20px;
+}
+
+h4{
+				font-size: 1.3em;
+				text-transform: uppercase;
+				margin: 30px 0 30px 0;
+}
+
+#about-me-content{
+				line-height: 1.7;
+				font-size: 1.1em;
+				text-align: justify;
+}
+
+/* ** MEDIA QUERIES ** */
+
 @media screen and (min-width: 768px) {
 				#home{
 								display: grid;
@@ -59,7 +82,7 @@ h3{
 								order: 2;
 								background: url('../img/profile-photo.png') no-repeat center center;
 								background-size: cover;
-								height: 100vh;
+								min-height: 100vh;
 				}
 
 				#profile-photo-container img{
@@ -68,11 +91,46 @@ h3{
 
 				#home-content{
 								order: 1;
-								height: 100vh;
+								min-height: 100vh;
 								display: flex;
 								flex-flow: column wrap;
 								justify-content: center;
 								align-items: center;
 								align-content: center;
+				}
+
+				/* ** ABOUT ME ** */
+
+				.card{
+								background: #FAFAFA;
+								max-width: 720px;
+								border-radius: 10px;
+								box-shadow: 0 0 5px #404040;
+								overflow: hidden;
+								margin: 15% 5% 10% 30%;
+								padding: 10px 30px 40px 65px;
+				}
+
+				.card:before{
+								content: "";
+								background: url("https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80") no-repeat center center;
+								background-size: cover;
+								width: 150px;
+								height: 150px;
+								box-shadow: 0 0 5px #404040;
+								display: block;
+								position: absolute;
+								border-radius: 10px;
+								transform: translate(-185px, -40px);
+				}
+
+				.card:after{
+								content: "";
+								background: #0061ff;
+								width: 2px;
+								height: 75px;
+								display: block;
+								position: absolute;
+								transform: translate(-38px, -35px);
 				}
 }
