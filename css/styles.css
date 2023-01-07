@@ -70,7 +70,7 @@ h4{
 
 #experiences{
 				min-height: 100vh;
-				padding: 10px 20px;
+				padding: 10px 20px 30px 20px;
 }
 
 #experiences-list{
@@ -139,7 +139,7 @@ h4{
 #education{
 				background: linear-gradient(-45deg, #392d69, #b57bee);
 				min-height: 100vh;
-				padding: 10px 20px;
+				padding: 10px 20px 30px 20px;
 }
 
 .education-card{
@@ -195,6 +195,59 @@ h4{
 .school,
 .location{
 				margin-bottom: 5px;
+}
+
+/* ** SKILLS ** */
+
+#skills{
+				height: 100vh;
+				padding: 10px 20px 30px 20px;
+}
+
+h5{
+				font-size: 1.1em;
+				text-decoration: underline;
+				text-transform: uppercase;
+				margin: 30px 0;
+}
+
+.skills-list{
+				min-height: 450px;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-around;
+				align-items: center;
+				align-content: space-around;
+}
+
+.tag{
+				flex: 0 1 350px;
+				max-width: 350px;
+				border-radius: 10px;
+				box-shadow: 0 0 15px #d4d4d4;
+				padding: 15px;
+}
+
+.tag:hover{
+				box-shadow: 0 0 15px #a3a3a3;
+}
+
+.tag strong{
+				font-size: .9em;
+				font-weight: bolder;
+}
+
+.progressbar{
+				background: #a3a3a3;
+				height: 5px;
+				border-radius: 10px;
+				margin-top: 10px;
+}
+
+.cursor{
+				background: #0974f1;
+				height: 5px;
+				border-radius: 10px 0 0 10px;
 }
 
 /* ** MEDIA QUERIES ** */
@@ -276,6 +329,16 @@ h4{
 				/* ** EDUCATION ** */
 
 				.education-card{
+								max-width: 450px;
+				}
+
+				/* ** SKILLS ** */
+
+				.skills-list{
+								min-height: 240px;
+				}
+
+				.tag{
 								max-width: 450px;
 				}
 }
