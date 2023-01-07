@@ -50,6 +50,7 @@ h3{
 
 #about-me{
 				background: linear-gradient(45deg, #f74c06, #f9bc2c);
+				min-height: 100vh;
 				padding: 10px 20px 50px 20px;
 }
 
@@ -68,6 +69,7 @@ h4{
 /* ** EXPERIENCES ** */
 
 #experiences{
+				min-height: 100vh;
 				padding: 10px 20px;
 }
 
@@ -93,12 +95,12 @@ h4{
 }
 
 .experience-card:nth-child(2n+1){
-				color: #171717;
+				color: #F4F7FB;
 				background: linear-gradient(90deg, #0974f1, #9fccfa);
 }
 
 .experience-card:nth-child(2n+2){
-				color: #FAFAFA;
+				color: #FBF4F4;
 				background: linear-gradient(90deg, #ea5753, #ffb88e);
 }
 
@@ -130,6 +132,69 @@ h4{
 				display: inline-block;
 				margin-top: 5px;
 				transform: translateY(2px);
+}
+
+/* ** EDUCATION  ** */
+
+#education{
+				background: linear-gradient(-45deg, #392d69, #b57bee);
+				min-height: 100vh;
+				padding: 10px 20px;
+}
+
+.education-card{
+				color: #FAFAFA;
+				max-width: 350px;
+				border-left: 2px solid #FAFAFA;
+				margin: 0 auto;
+				padding: 20px 10px;
+}
+
+.education-card:before{
+				content: "";
+				background: #0974f1;
+				width: 8px;
+				height: 8px;
+				border: 2px solid #FAFAFA;
+				border-radius: 100%;
+				display: block;
+				position: absolute;
+				transform: translate(-17px, 0);
+}
+
+.education-card:first-child{
+				padding-top:0;
+}
+
+.education-card span{
+				display: block;
+				margin-left: 5px;
+}
+
+.date{
+				font-weight: bolder;
+				margin-bottom: 15px;
+				transform: translateY(-2px);
+}
+
+.diploma{
+				font-size: .9em;
+				float: right;
+				background: rgba(255, 255, 255, .2);
+				border-radius: 10px;
+				padding: 5px;
+				transform: translateY(-2px);
+}
+
+.title{
+				line-height: 1.2;
+				text-transform: uppercase;
+				margin-bottom: 15px;
+}
+
+.school,
+.location{
+				margin-bottom: 5px;
 }
 
 /* ** MEDIA QUERIES ** */
@@ -206,5 +271,11 @@ h4{
 				.experience-card{
 								width: 321px;
 								height: 207px;
+				}
+
+				/* ** EDUCATION ** */
+
+				.education-card{
+								max-width: 450px;
 				}
 }
