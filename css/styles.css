@@ -279,16 +279,10 @@ h5{
 
 .tag{
 				flex: 0 1 350px;
-				color: #F4FBF9;
-				background: #065F46;
+				color: #065F46;
 				max-width: 350px;
 				border-radius: 10px;
-				box-shadow: 0 0 5px #171717;
 				padding: 15px;
-}
-
-.tag:hover{
-				box-shadow: 0 0 10px #171717;
 }
 
 .tag strong{
@@ -297,17 +291,17 @@ h5{
 }
 
 .progressbar{
-				background: #065F46;
+				background: #F4FBF9;
 				height: 3px;
-				border: 1px solid #F4FBF9;
 				border-radius: 10px;
 				margin-top: 10px;
 }
 
 .cursor{
-				background: #F4FBF9;
+				background: #065F46;
+				background: linear-gradient(-45deg, #0AAB7D, #065f46, #F4FBF9);
 				height: 3px;
-				border-radius: 10px 0 0 10px;
+				border-radius: 10px;
 }
 
 /* ** MEDIA QUERIES ** */
