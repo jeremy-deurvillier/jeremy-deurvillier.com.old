@@ -1,6 +1,46 @@
+/* ** COMMON STYLES ** */
+
+body{
+				background: #F4FBF9;
+}
+
+h4{
+				font-size: 1.3em;
+				text-transform: uppercase;
+				color: #065F46;
+				margin: 30px 0 30px 0;
+}
+
+a,
+a:visited{
+				font-size: 1.8em;
+				text-align: center;
+				vertical-align: middle;
+				color: #F4FBF9;
+				background: #065f46;
+				width: 32px;
+				height: 32px;
+				display: inline-flex;
+				flex-flow: column nowrap;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				border: 2px solid #065f46;
+				border-radius: 100%;
+				padding: 10px;
+}
+
+a:hover{
+				color: #065f46;
+				background: #F4FBF9;
+				border-color: #065f46;
+}
+
 /* ** HOME ** */
 
 #home{
+				color: #065f46;
+				background: #F4FBF9;
 				min-height: 100vh;
 				display: flex;
 				flex-flow: column wrap;
@@ -39,25 +79,35 @@ h3{
 }
 
 #contact-links-container{
-				margin-top: 40px;
+				margin-top: 30px;
 }
 
 #contact-links-container a:last-child{
 				margin-left: 30px;
 }
 
+.svg-contact{
+				stroke-width:0;
+				stroke: currentColor;
+				fill: currentColor;
+				width: 1em;
+				height: 1em;
+				display: inline-block;
+}
+
 /* ** ABOUT ME ** */
 
 #about-me{
-				background: linear-gradient(45deg, #f74c06, #f9bc2c);
+				color: #F4FBF9;
+				background: #065F46;
+				background: linear-gradient(45deg, #065f46, #0AAB7D);
 				min-height: 100vh;
+				border-radius: 20px 20px 0 0;
 				padding: 10px 20px 50px 20px;
 }
 
-h4{
-				font-size: 1.3em;
-				text-transform: uppercase;
-				margin: 30px 0 30px 0;
+#about-me h4{
+				color: #F4FBF9;
 }
 
 #about-me-content{
@@ -82,6 +132,8 @@ h4{
 }
 
 .experience-card{
+				color: #F4FBF9;
+				background: #065f46;
 				border-radius: 10px;
 				width: 280px;
 				height: 165px;
@@ -95,13 +147,11 @@ h4{
 }
 
 .experience-card:nth-child(2n+1){
-				color: #F4F7FB;
-				background: linear-gradient(90deg, #0974f1, #9fccfa);
+				background: linear-gradient(45deg, #065f46, #0AAB7D);
 }
 
 .experience-card:nth-child(2n+2){
-				color: #FBF4F4;
-				background: linear-gradient(90deg, #ea5753, #ffb88e);
+				background: linear-gradient(-45deg, #065f46, #0AAB7D);
 }
 
 .experience-card span{
@@ -137,25 +187,31 @@ h4{
 /* ** EDUCATION  ** */
 
 #education{
-				background: linear-gradient(-45deg, #392d69, #b57bee);
+				color: #F4FBF9;
+				background: #065F46;
+				background: linear-gradient(45deg, #065f46, #0AAB7D);
 				min-height: 100vh;
 				padding: 10px 20px 30px 20px;
 }
 
+#education h4{
+				color: #F4FBF9;
+}
+
 .education-card{
-				color: #FAFAFA;
+				color: #F4FBF9;
 				max-width: 350px;
-				border-left: 2px solid #FAFAFA;
+				border-left: 2px solid #F4FBF9;
 				margin: 0 auto;
 				padding: 20px 10px;
 }
 
 .education-card:before{
 				content: "";
-				background: #0974f1;
+				background: #F4FBF9;
 				width: 8px;
 				height: 8px;
-				border: 2px solid #FAFAFA;
+				border: 2px solid #F4FBF9;
 				border-radius: 100%;
 				display: block;
 				position: absolute;
@@ -180,9 +236,9 @@ h4{
 .diploma{
 				font-size: .9em;
 				float: right;
-				background: rgba(255, 255, 255, .2);
+				background: #065F46;
 				border-radius: 10px;
-				padding: 5px;
+				padding: 5px 10px;
 				transform: translateY(-2px);
 }
 
@@ -208,6 +264,7 @@ h5{
 				font-size: 1.1em;
 				text-decoration: underline;
 				text-transform: uppercase;
+				color: #065F46;
 				margin: 30px 0;
 }
 
@@ -222,14 +279,16 @@ h5{
 
 .tag{
 				flex: 0 1 350px;
+				color: #F4FBF9;
+				background: #065F46;
 				max-width: 350px;
 				border-radius: 10px;
-				box-shadow: 0 0 15px #d4d4d4;
+				box-shadow: 0 0 5px #171717;
 				padding: 15px;
 }
 
 .tag:hover{
-				box-shadow: 0 0 15px #a3a3a3;
+				box-shadow: 0 0 10px #171717;
 }
 
 .tag strong{
@@ -238,15 +297,16 @@ h5{
 }
 
 .progressbar{
-				background: #a3a3a3;
-				height: 5px;
+				background: #065F46;
+				height: 3px;
+				border: 1px solid #F4FBF9;
 				border-radius: 10px;
 				margin-top: 10px;
 }
 
 .cursor{
-				background: #0974f1;
-				height: 5px;
+				background: #F4FBF9;
+				height: 3px;
 				border-radius: 10px 0 0 10px;
 }
 
@@ -286,11 +346,20 @@ h5{
 
 				/* ** ABOUT ME ** */
 
+				#about-me{
+								border-radius:0;
+				}
+
+				#about-me h4{
+								color: #065F46;
+				}
+
 				.about-me-wrapper{
-								background: #FAFAFA;
+								color: #065F46;
+								background: #F4FBF9;
 								max-width: 720px;
 								border-radius: 10px;
-								box-shadow: 0 0 5px #404040;
+								box-shadow: 0 0 5px #171717;
 								overflow: hidden;
 								margin: 15% 5% 10% 30%;
 								padding: 10px 30px 40px 65px;
@@ -302,7 +371,7 @@ h5{
 								background-size: cover;
 								width: 150px;
 								height: 150px;
-								box-shadow: 0 0 5px #404040;
+								box-shadow: 0 0 5px #171717;
 								display: block;
 								position: absolute;
 								border-radius: 10px;
@@ -311,7 +380,7 @@ h5{
 
 				.about-me-wrapper:after{
 								content: "";
-								background: #f74c06;
+								background: #065F46;
 								width: 2px;
 								height: 75px;
 								display: block;
