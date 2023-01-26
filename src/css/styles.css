@@ -1,407 +1,411 @@
 /* ** COMMON STYLES ** */
 
 body{
-				background: #F4FBF9;
+    font-family: 'Nunito', sans-serif;
+	background: #F4FBF9;
 }
 
 h4{
-				font-size: 1.3em;
-				text-transform: uppercase;
-				color: #065F46;
-				margin: 30px 0 30px 0;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color: #065F46;
+	margin: 30px 0 30px 0;
 }
 
 a,
 a:visited{
-				font-size: 1.8em;
-				text-align: center;
-				vertical-align: middle;
-				color: #F4FBF9;
-				background: #065f46;
-				width: 32px;
-				height: 32px;
-				display: inline-flex;
-				flex-flow: column nowrap;
-				justify-content: center;
-				align-items: center;
-				align-content: center;
-				border: 2px solid #065f46;
-				border-radius: 100%;
-				padding: 10px;
+    font-size: 1.8em;
+	text-align: center;
+	vertical-align: middle;
+	color: #F4FBF9;
+	background: #065f46;
+	width: 32px;
+	height: 32px;
+	display: inline-flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	border: 2px solid #065f46;
+	border-radius: 100%;
+	padding: 10px;
 }
 
 a:hover{
-				color: #065f46;
-				background: #F4FBF9;
-				border-color: #065f46;
+	color: #065f46;
+	background: #F4FBF9;
+	border-color: #065f46;
 }
 
 /* ** HOME ** */
 
 #home{
-				color: #065f46;
-				background: #F4FBF9;
-				min-height: 100vh;
-				display: flex;
-				flex-flow: column wrap;
-				justify-content: center;
-				align-items: center;
-				align-content: center;
+	color: #065f46;
+	background: #F4FBF9;
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 #profile-photo-container{
-				text-align: center;
+	text-align: center;
 }
 
 #profile-photo-container img{
-				width: 160px;
-				height: 160px;
-				border-radius: 100%;
-				margin-bottom: 30px;
+	width: 160px;
+	height: 160px;
+	border-radius: 100%;
+	margin-bottom: 30px;
 }
 
 #home-content div{
-				text-align: center;
+    text-align: center;
 }
 
 h1{
-				font-size: 2.2em;
-				margin-bottom: 20px;
+    font-size: 2.2em;
+    margin-bottom: 20px;
 }
 
 h2{
-			font-size: 1.8em;
-			margin-bottom: 20px;
+    font-size: 1.8em;
+    margin-bottom: 20px;
 }
 
 h3{
-				font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 #contact-links-container{
-				margin-top: 30px;
+    margin-top: 30px;
 }
 
 #contact-links-container a:last-child{
-				margin-left: 30px;
+    margin-left: 30px;
 }
 
 .svg-contact{
-				stroke-width:0;
-				stroke: currentColor;
-				fill: currentColor;
-				width: 1em;
-				height: 1em;
-				display: inline-block;
+	stroke-width:0;
+	stroke: currentColor;
+	fill: currentColor;
+	width: 1em;
+	height: 1em;
+	display: inline-block;
 }
 
 /* ** ABOUT ME ** */
 
 #about-me{
-				color: #F4FBF9;
-				background: #065F46;
-				background: linear-gradient(45deg, #065f46, #0AAB7D);
-				min-height: 100vh;
-				border-radius: 20px 20px 0 0;
-				padding: 10px 20px 50px 20px;
+	color: #F4FBF9;
+	background: #065F46;
+	background: linear-gradient(45deg, #065f46, #0AAB7D);
+	min-height: 100vh;
+	border-radius: 20px 20px 0 0;
+	padding: 10px 20px 50px 20px;
 }
 
 #about-me h4{
-				color: #F4FBF9;
+    color: #F4FBF9;
 }
 
 #about-me-content{
-				line-height: 1.7;
-				font-size: 1.1em;
-				text-align: justify;
+    line-height: 1.7;
+    font-size: 1.1em;
+    text-align: justify;
 }
 
 /* ** EXPERIENCES ** */
 
 #experiences{
-				min-height: 100vh;
-				padding: 10px 20px 30px 20px;
+    min-height: 100vh;
+    padding: 10px 20px 30px 20px;
 }
 
 #experiences-list{
-				display: flex;
-				flex-flow: row wrap;
-				justify-content: space-around;
-				align-items: center;
-				align-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 
 .experience-card{
-				color: #F4FBF9;
-				background: #065f46;
-				border-radius: 10px;
-				width: 280px;
-				height: 165px;
-				display: flex;
-				flex-flow: column wrap;
-				justify-content: space-between;
-				align-items: flex-start;
-				align-content: space-between;
-				margin: 10px;
-				padding: 10px;
+	color: #F4FBF9;
+	background: #065f46;
+	border-radius: 10px;
+	width: 280px;
+	height: 165px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+    align-content: space-between;
+    margin: 10px;
+    padding: 10px;
 }
 
 .experience-card:nth-child(2n+1){
-				background: linear-gradient(45deg, #065f46, #0AAB7D);
+    background: linear-gradient(45deg, #065f46, #0AAB7D);
 }
 
 .experience-card:nth-child(2n+2){
-				background: linear-gradient(-45deg, #065f46, #0AAB7D);
+    background: linear-gradient(-45deg, #065f46, #0AAB7D);
 }
 
 .experience-card span{
-				display: block;
+    display: block;
 }
 
 .dates{
-				font-weight: bold;
-				margin: 15px 10px 10px 10px;
+    font-weight: bold;
+    margin: 15px 10px 10px 10px;
 }
 
 .job{
-				font-size: 1.05em;
-				text-transform: uppercase;
-				margin: 10px 10px 10px 10px;
+    font-size: 1.05em;
+    text-transform: uppercase;
+    margin: 10px 10px 10px 10px;
 }
 
 .company-infos{
-				margin: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
 }
 
 .svg-icon{
-				stroke-width:0;
-				stroke: currentColor;
-				fill: currentColor;
-				width: 1em;
-				height: 1em;
-				display: inline-block;
-				margin-top: 5px;
-				transform: translateY(2px);
+	stroke-width:0;
+	stroke: currentColor;
+	fill: currentColor;
+	width: 1em;
+	height: 1em;
+	display: inline-block;
+	margin-top: 5px;
+	transform: translateY(2px);
 }
 
 /* ** EDUCATION  ** */
 
 #education{
-				color: #F4FBF9;
-				background: #065F46;
-				background: linear-gradient(45deg, #065f46, #0AAB7D);
-				min-height: 100vh;
-				padding: 10px 20px 30px 20px;
+    color: #F4FBF9;
+    background: #065F46;
+    background: linear-gradient(45deg, #065f46, #0AAB7D);
+    min-height: 100vh;
+    padding: 10px 20px 30px 20px;
 }
 
 #education h4{
-				color: #F4FBF9;
+    color: #F4FBF9;
 }
 
 .education-card{
-				color: #F4FBF9;
-				max-width: 350px;
-				border-left: 2px solid #F4FBF9;
-				margin: 0 auto;
-				padding: 20px 10px;
+    color: #F4FBF9;
+    max-width: 350px;
+    border-left: 2px solid #F4FBF9;
+    margin: 0 auto;
+    padding: 20px 10px;
 }
 
 .education-card:before{
-				content: "";
-				background: #F4FBF9;
-				width: 8px;
-				height: 8px;
-				border: 2px solid #F4FBF9;
-				border-radius: 100%;
-				display: block;
-				position: absolute;
-				transform: translate(-17px, 0);
+	content: "";
+	background: #F4FBF9;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #F4FBF9;
+	border-radius: 100%;
+	display: block;
+	position: absolute;
+	transform: translate(-17px, 0);
 }
 
 .education-card:first-child{
-				padding-top:0;
+    padding-top:0;
 }
 
 .education-card span{
-				display: block;
-				margin-left: 5px;
+    display: block;
+    margin-left: 5px;
 }
 
 .date{
-				font-weight: bolder;
-				margin-bottom: 15px;
-				transform: translateY(-2px);
+    font-weight: bolder;
+    margin-bottom: 15px;
+    transform: translateY(-2px);
 }
 
 .diploma{
-				font-size: .9em;
-				float: right;
-				background: #065F46;
-				border-radius: 10px;
-				padding: 5px 10px;
-				transform: translateY(-2px);
+	font-size: .9em;
+	float: right;
+	background: #065F46;
+	border-radius: 10px;
+	padding: 5px 10px;
+	transform: translateY(-2px);
 }
 
 .title{
-				line-height: 1.2;
-				text-transform: uppercase;
-				margin-bottom: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .school,
 .location{
-				margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 /* ** SKILLS ** */
 
 #skills{
-				height: 100vh;
-				padding: 10px 20px 30px 20px;
+    height: 100vh;
+    padding: 10px 20px 30px 20px;
 }
 
 h5{
-				font-size: 1.1em;
-				text-decoration: underline;
-				text-transform: uppercase;
-				color: #065F46;
-				margin: 30px 0;
+    font-size: 1.1em;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #065F46;
+    margin: 30px 0;
 }
 
 .skills-list{
-				min-height: 450px;
-				display: flex;
-				flex-flow: row wrap;
-				justify-content: space-around;
-				align-items: center;
-				align-content: space-around;
+    min-height: 450px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
 }
 
 .tag{
-				flex: 0 1 350px;
-				color: #065F46;
-				max-width: 350px;
-				border-radius: 10px;
-				padding: 15px;
+    flex: 0 1 350px;
+    color: #065F46;
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 15px;
 }
 
 .tag strong{
-				font-size: .9em;
-				font-weight: bolder;
+    font-size: .9em;
+    font-weight: bolder;
 }
 
 .progressbar{
-				background: #F4FBF9;
-				height: 3px;
-				border-radius: 10px;
-				margin-top: 10px;
+    background: #F4FBF9;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 .cursor{
-				background: #065F46;
-				background: linear-gradient(-45deg, #0AAB7D, #065f46, #F4FBF9);
-				height: 3px;
-				border-radius: 10px;
+    background: #065F46;
+    background: linear-gradient(-45deg, #0AAB7D, #065f46, #F4FBF9);
+    height: 3px;
+    border-radius: 10px;
 }
 
 /* ** MEDIA QUERIES ** */
 
 @media screen and (min-width: 768px) {
-				#home{
-								display: grid;
-								grid-template-columns: 1fr 1fr;
-								grid-template-rows: 1fr;
-								justify-items: stretch;
-								align-items: stretch;
-								justify-content: stretch;
-								align-content: stretch;
-				}
 
-				#profile-photo-container{
-								order: 2;
-								background: url('../img/profile-photo.jpg') no-repeat center center;
-								background-size: cover;
-								min-height: 100vh;
-				}
+    /* ** HOME ** */
 
-				#profile-photo-container img{
-								display: none;
-				}
+	#home{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		justify-items: stretch;
+		align-items: stretch;
+		justify-content: stretch;
+		align-content: stretch;
+	}
 
-				#home-content{
-								order: 1;
-								min-height: 100vh;
-								display: flex;
-								flex-flow: column wrap;
-								justify-content: center;
-								align-items: center;
-								align-content: center;
-				}
+	#profile-photo-container{
+        order: 2;
+        background: url('../img/profile-photo.jpg') no-repeat center center;
+        background-size: cover;
+        min-height: 100vh;
+	}
 
-				/* ** ABOUT ME ** */
+    #profile-photo-container img{
+        display: none;
+    }
 
-				#about-me{
-								border-radius:0;
-				}
+    #home-content{
+		order: 1;
+		min-height: 100vh;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+    }
 
-				#about-me h4{
-								color: #065F46;
-				}
+	/* ** ABOUT ME ** */
 
-				.about-me-wrapper{
-								color: #065F46;
-								background: #F4FBF9;
-								max-width: 720px;
-								border-radius: 10px;
-								box-shadow: 0 0 5px #171717;
-								overflow: hidden;
-								margin: 15% 5% 10% 30%;
-								padding: 10px 30px 40px 65px;
-				}
+	#about-me{
+		border-radius:0;
+	}
 
-				.about-me-wrapper:before{
-								content: "";
-								background: url("../img/Nepal-mountain-by-Rohit-Tandon.jpg") no-repeat center center;
-								background-size: cover;
-								width: 150px;
-								height: 150px;
-								box-shadow: 0 0 5px #171717;
-								display: block;
-								position: absolute;
-								border-radius: 10px;
-								transform: translate(-185px, -40px);
-				}
+	#about-me h4{
+		color: #065F46;
+	}
 
-				.about-me-wrapper:after{
-								content: "";
-								background: #065F46;
-								width: 2px;
-								height: 75px;
-								display: block;
-								position: absolute;
-								transform: translate(-38px, -35px);
-				}
+	.about-me-wrapper{
+		color: #065F46;
+		background: #F4FBF9;
+		max-width: 720px;
+		border-radius: 10px;
+		box-shadow: 0 0 5px #171717;
+		overflow: hidden;
+		margin: 15% 5% 10% 30%;
+		padding: 10px 30px 40px 65px;
+	}
 
-				/* ** EXPERIENCES ** */
+    .about-me-wrapper:before{
+		content: "";
+		background: url("../img/Nepal-mountain-by-Rohit-Tandon.jpg") no-repeat center center;
+		background-size: cover;
+		width: 150px;
+		height: 150px;
+		box-shadow: 0 0 5px #171717;
+		display: block;
+		position: absolute;
+		border-radius: 10px;
+		transform: translate(-185px, -40px);
+    }
 
-				.experience-card{
-								width: 321px;
-								height: 207px;
-				}
+    .about-me-wrapper:after{
+		content: "";
+		background: #065F46;
+		width: 2px;
+		height: 75px;
+		display: block;
+		position: absolute;
+		transform: translate(-38px, -35px);
+    }
 
-				/* ** EDUCATION ** */
+    /* ** EXPERIENCES ** */
 
-				.education-card{
-								max-width: 450px;
-				}
+    .experience-card{
+        width: 321px;
+        height: 207px;
+    }
 
-				/* ** SKILLS ** */
+    /* ** EDUCATION ** */
 
-				.skills-list{
-								min-height: 240px;
-				}
+    .education-card{
+        max-width: 450px;
+    }
 
-				.tag{
-								max-width: 450px;
-				}
+    /* ** SKILLS ** */
+
+    .skills-list{
+        min-height: 240px;
+    }
+
+    .tag{
+        max-width: 450px;
+    }
 }
