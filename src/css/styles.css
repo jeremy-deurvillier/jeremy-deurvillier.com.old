@@ -291,6 +291,19 @@ h5{
     font-weight: bolder;
 }
 
+.evaluate{
+    display: none;
+    float: right;
+}
+
+.evaluate:before{
+    content: "";
+}
+
+.tag:hover .evaluate{
+    display: inline-block;
+}
+
 .progressbar{
     background: #F4FBF9;
     height: 3px;
@@ -407,5 +420,13 @@ h5{
 
     .tag{
         max-width: 450px;
+    }
+
+    .evaluate{
+        float: none;
+    }
+
+    .evaluate:before{
+        content: " ~ ";
     }
 }
